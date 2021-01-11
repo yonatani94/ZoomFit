@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        >
+        <com.google.android.material.button.MaterialButton
+        android:id="@+id/Start_BTN_RegTrain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:text="Register for Training"
+        android:textColor="#0D0C0E"
+        android:drawableTop="@drawable/excersise1"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:tag="RegTrain" ></com.google.android.material.button.MaterialButton>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        >
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/Start_BTN_RecordTrain"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Register for Coach"
+            android:textColor="#0D0C0E"
+            android:drawableTop="@drawable/coach1"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:tag="RegCoach" ></com.google.android.material.button.MaterialButton>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        >
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/Start_BTN_Regdiet"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Register for Dietitian"
+            android:textColor="#0D0C0E"
+            android:drawableTop="@drawable/menu1"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:tag="RecgDiet" ></com.google.android.material.button.MaterialButton>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        >
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/Start_BTN_Regsupply"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Register for Supply"
+            android:textColor="#0D0C0E"
+            android:drawableTop="@drawable/weight1"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:tag="regsupply"
+            ></com.google.android.material.button.MaterialButton>
+    </LinearLayout>
+
+    <TextView android:id="@+id/register_TXT_login"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:text="Already a member?  Login"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:tag="logout"/>
+
+
+</LinearLayout>
