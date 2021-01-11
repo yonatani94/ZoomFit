@@ -97,6 +97,7 @@ public class StartUp extends AppCompatActivity {
     private void liveActivity() {
         Intent intent = new Intent(getApplicationContext(), liveActivity.class);
         this.startActivity(intent);
+        //
     }
 
     private void dietActivity() {
