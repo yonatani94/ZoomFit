@@ -2,7 +2,6 @@ package com.example.zoomfit;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.os.PersistableBundle;
 import android.view.View;
 
 import androidx.annotation.Nullable;
@@ -10,7 +9,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.zoomfit.activities.SettingsActivity;
 import com.example.zoomfit.activities.chatActivity;
-import com.example.zoomfit.activities.coachActivity;
+import com.example.zoomfit.activities.CoachActivity;
 import com.example.zoomfit.activities.dietActivity;
 import com.example.zoomfit.activities.liveActivity;
 import com.example.zoomfit.activities.recordActivity;
@@ -36,6 +35,13 @@ public class StartUp extends AppCompatActivity {
         Start_BTN_listCoach.setOnClickListener(buttonClickListener);
         Start_BTN_settings.setOnClickListener(buttonClickListener);
         Start_BTN_logout.setOnClickListener(buttonClickListener);
+        Start_BTN_RecordTrain.setOnClickListener(buttonClickListener);
+        Start_BTN_listCoach.setOnClickListener(buttonClickListener);
+        Start_BTN_live.setOnClickListener(buttonClickListener);
+        Start_BTN_chat.setOnClickListener(buttonClickListener);
+        Start_BTN_supply.setOnClickListener(buttonClickListener);
+        Start_BTN_diet.setOnClickListener(buttonClickListener);
+
     }
 
     private void findviews() {
@@ -90,7 +96,7 @@ public class StartUp extends AppCompatActivity {
     }
 
     private void coachActivity() {
-        Intent intent = new Intent(getApplicationContext(), coachActivity.class);
+        Intent intent = new Intent(getApplicationContext(), CoachActivity.class);
         this.startActivity(intent);
     }
 

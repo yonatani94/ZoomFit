@@ -14,7 +14,7 @@
         android:id="@+id/training_LBL_Title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Coaches list"
+        android:text="Dietitian list"
         android:textSize="35dp"
         android:textColor="#CF0B0B"
         android:textStyle="bold"
@@ -67,11 +67,11 @@
             android:id="@+id/training_LBL_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Yosi choen\nMuscle\n26\n"
+            android:text="Eyal amar\nShape\n36\n100 shekel"
             android:layout_marginLeft="10dp"
             android:textSize="20sp"
             android:textColor="@color/white"
-            android:tag="name_1"
+            android:tag="name"
             />
     </RelativeLayout>
 
@@ -110,8 +110,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
-            android:tag="name_2"
-            android:text="Dafna levi\nShape\n22\n"
+            android:tag="name1"
+            android:text="Or din\nGain weight\n21\n150 shekel"
             android:textColor="@color/white"
             android:textSize="20sp" />
     </RelativeLayout>
@@ -151,11 +151,11 @@
             android:id="@+id/training_LBL_name3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Shlomi kick\nBody Builder\n33\n"
+            android:text="Salo elia\nLose weight\n41\n80 shekel"
             android:layout_marginLeft="10dp"
             android:textSize="20sp"
             android:textColor="@color/white"
-            android:tag="name_3"
+            android:tag="name3"
             />
     </RelativeLayout>
 
@@ -195,11 +195,11 @@
             android:id="@+id/training_LBL_name4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Shai malca\nRunning\n29\n"
+            android:text="Shai mika\nGain weight\n30\n100 shekel"
             android:textSize="20sp"
             android:textColor="@color/white"
             android:layout_marginLeft="10dp"
-            android:tag="name_4"
+            android:tag="name4"
             />
     </RelativeLayout>
 
@@ -239,11 +239,11 @@
             android:id="@+id/training_LBL_name5"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Maor zagori\nYoga\n42\n"
+            android:text="Chen zagori\nHealty\n37\n"
             android:textSize="20sp"
             android:textColor="@color/white"
             android:layout_marginLeft="10dp"
-            android:tag="name_5"
+            android:tag="name5"
             />
     </RelativeLayout>
 

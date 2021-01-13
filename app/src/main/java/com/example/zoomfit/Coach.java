@@ -1,11 +1,11 @@
 package com.example.zoomfit;
 
-public class coach {
+public class Coach {
     String name;
     String profession ;
     int age;
 
-    public coach(String name, String profession, int age) {
+    public Coach(String name, String profession, int age) {
         this.name = name;
         this.profession = profession;
         this.age = age;

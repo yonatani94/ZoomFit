@@ -8,7 +8,12 @@
     android:orientation="vertical"
     >
 
-
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:src="@drawable/bell"
+        android:layout_gravity="right"
+        ></ImageView>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -23,6 +28,7 @@
             android:text="Records Training"
             app:iconTint="#110E15"
             android:textColor="#0D0C0E"
+            android:textSize="14sp"
             android:drawableTop="@drawable/video"
             style="@style/Widget.MaterialComponents.Button.TextButton"
             android:tag="RecordTrain" ></com.google.android.material.button.MaterialButton>
@@ -36,9 +42,10 @@
             android:layout_weight="1"
             android:drawableTop="@drawable/coach"
             android:tag="coach"
+
             android:text="List of Coach"
             android:textColor="#0D0C0E"
-            android:textSize="20sp"
+            android:textSize="14sp"
             app:iconTint="#110E15" />
 
     </LinearLayout>
@@ -59,6 +66,8 @@
             app:iconTint="#110E15"
             android:text="Live Train"
             android:textColor="#0D0C0E"
+            android:textSize="14sp"
+
             android:drawableTop="@drawable/live"
             android:tag="live"
             />
@@ -71,6 +80,8 @@
             android:text="List of Dietitians"
             app:iconTint="#110E15"
             android:textColor="#0D0C0E"
+            android:textSize="14sp"
+
             android:drawableTop="@drawable/menu"
             android:tag="diet"
             />
@@ -94,6 +105,8 @@
             android:layout_weight="1"
             android:text="Chat"
             app:iconTint="#110E15"
+            android:textSize="14sp"
+
             android:textColor="#0D0C0E"
             android:drawableTop="@drawable/chat"
             android:tag="chat"
@@ -104,6 +117,8 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="List of Supply"
+            android:textSize="14sp"
+
             app:iconTint="#110E15"
             android:textColor="#0D0C0E"
             android:drawableTop="@drawable/weight"
@@ -126,6 +141,8 @@
             android:layout_weight="1"
             android:text="settings"
             app:iconTint="#110E15"
+            android:textSize="14sp"
+
             android:textColor="#0D0C0E"
             android:drawableTop="@drawable/ic_settings_150"
             android:tag="settings"
@@ -140,8 +157,9 @@
             android:drawableTop="@drawable/ic_logout"
             android:tag="logout"
             android:text="Sign out"
+            android:textSize="14sp"
+
             android:textColor="#0D0C0E"
-            android:textSize="20sp"
             app:iconTint="#110E15" />
 
     </LinearLayout>

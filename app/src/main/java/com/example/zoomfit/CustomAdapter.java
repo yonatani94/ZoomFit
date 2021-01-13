@@ -4,68 +4,91 @@ import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.recyclerview.widget.RecyclerView;
+
+import com.google.android.material.imageview.ShapeableImageView;
+import com.google.android.material.snackbar.Snackbar;
 
 import java.util.ArrayList;
 
-public class CustomAdapter extends ArrayAdapter<coach> implements View.OnClickListener {
-    private ArrayList<coach> dataSet;
-    Context mContext;
-    int lastPosition = -1;
-    private static class ViewHolder {
-        TextView txtName;
-        TextView txtType;
-        TextView txtVersion;
-        ImageView info;
+public class CustomAdapter extends  RecyclerView.Adapter<CustomAdapter.ViewHolder> {
+    private ArrayList<Coach> mData = new ArrayList<>();
+    private LayoutInflater mInflater;
+    private Context context;
+    private ExerciseItemClickListener exerciseItemClickListener;
+
+    CustomAdapter(Context context, ArrayList<Coach> data) {
+        this.mInflater = LayoutInflater.from(context);
+        this.mData = data;
+        this.context = context;
     }
 
-    public CustomAdapter(ArrayList<coach> data, Context context) {
-        super(context, R.layout.rowview, data);
-        this.dataSet = data;
-        this.mContext = context;
+    public void setClickListeners(ExerciseItemClickListener exerciseItemClickListener) {
+        this.exerciseItemClickListener = exerciseItemClickListener;
+    }
+    @Override
+    public ViewHolder onCreateViewHolder( ViewGroup parent, int viewType) {
+        View view = mInflater.inflate(R.layout.rowview, parent, false);
+        return new ViewHolder(view);
     }
 
     @Override
-    public void onClick(View v) {
-        int position = (Integer) v.getTag();
-        Object object = getItem(position);
+    public void onBindViewHolder( ViewHolder holder, int position) {
+        Coach coach = mData.get(position);
+        holder.exercise_LBL_name.setText(coach.getName());
+        holder.exercise_LBL_age.setText(coach.getAge());
+        holder.exercise_LBL_type.setText(coach.getProfession());
+
     }
 
-    @NonNull
     @Override
-    public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
-
-        coach dataModel = getItem(position);
-        ViewHolder viewHolder; // view lookup cache stored in tag
-        final View result;
-        if (convertView == null) {
-            viewHolder = new ViewHolder();
-            LayoutInflater inflater = LayoutInflater.from(getContext());
-            convertView = inflater.inflate(R.layout.rowview, parent, false);
-            viewHolder.txtName = (TextView) convertView.findViewById(R.id.name);
-            viewHolder.txtType = (TextView) convertView.findViewById(R.id.type);
-            viewHolder.txtVersion = (TextView) convertView.findViewById(R.id.version_number);
-            viewHolder.info = (ImageView) convertView.findViewById(R.id.item_info);
-            result = convertView;
-            convertView.setTag(viewHolder);
-        } else {
-            viewHolder = (ViewHolder) convertView.getTag();
-            result = convertView;
+    public int getItemCount() {
+        if(mData == null){
+            return -1;
         }
-       /* Animation animation = AnimationUtils.loadAnimation(mContext, (position > lastPosition) ? R.anim.up_from_bottom : R.anim.down_from_top);
-        result.startAnimation(animation);*/
-        lastPosition = position;
-        viewHolder.txtName.setText(dataModel.getName());
-        viewHolder.txtType.setText(dataModel.getProfession());
-        viewHolder.txtVersion.setText(dataModel.getAge());
-        viewHolder.info.setOnClickListener(this);
-        viewHolder.info.setTag(position);
-                return convertView;
+        return mData.size();
+    }
 
+
+    Coach getItem(int position) {
+        return mData.get(position);
+    }
+    public class ViewHolder extends RecyclerView.ViewHolder {
+
+       // private ShapeableImageView exercise_IMG_icon;
+        private TextView exercise_LBL_name;
+        private TextView exercise_LBL_type;
+        private TextView exercise_LBL_age ;
+       // private TextView exercise_LBL_name;
+
+        ViewHolder(View itemView) {
+            super(itemView);
+          //  exercise_IMG_icon = itemView.findViewById(R.id.exercise_IMG_icon);
+            exercise_LBL_name= itemView.findViewById(R.id.exercise_LBL_name);
+            exercise_LBL_type = itemView.findViewById(R.id.exercise_LBL_type);
+            exercise_LBL_age = itemView.findViewById(R.id.exercise_LBL_age);
+           // exercise_LBL_name = itemView.findViewById(R.id.exercise_LBL_name);
+
+            itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    if (exerciseItemClickListener != null) {
+                        exerciseItemClickListener.itemClicked(getItem(getAdapterPosition()), getAdapterPosition());
+                    }
+                }
+            });
+        }
+
+    }
+    public interface ExerciseItemClickListener {
+        void itemClicked(Coach coach, int position);
     }
 }

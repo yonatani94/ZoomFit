@@ -14,7 +14,7 @@
         android:id="@+id/training_LBL_Title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Coaches list"
+        android:text="Supply list"
         android:textSize="35dp"
         android:textColor="#CF0B0B"
         android:textStyle="bold"
@@ -67,11 +67,11 @@
             android:id="@+id/training_LBL_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Yosi choen\nMuscle\n26\n"
+            android:text="Miki zohar\nRemez 15 Tel aviv\n050-965852741\n"
             android:layout_marginLeft="10dp"
             android:textSize="20sp"
             android:textColor="@color/white"
-            android:tag="name_1"
+            android:tag="name"
             />
     </RelativeLayout>
 
@@ -110,8 +110,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
-            android:tag="name_2"
-            android:text="Dafna levi\nShape\n22\n"
+            android:tag="name1"
+            android:text="Din or\nShenkin 21 Bat-Yam\n052-8978541\n"
             android:textColor="@color/white"
             android:textSize="20sp" />
     </RelativeLayout>
@@ -151,11 +151,11 @@
             android:id="@+id/training_LBL_name3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Shlomi kick\nBody Builder\n33\n"
+            android:text="Tal meir\nSokolov 36 Holon\n054-8876532\n"
             android:layout_marginLeft="10dp"
             android:textSize="20sp"
             android:textColor="@color/white"
-            android:tag="name_3"
+            android:tag="name3"
             />
     </RelativeLayout>
 
@@ -195,11 +195,11 @@
             android:id="@+id/training_LBL_name4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Shai malca\nRunning\n29\n"
+            android:text="Eti kopel\n Eli choen 85 Azor\n050-36928574\n"
             android:textSize="20sp"
             android:textColor="@color/white"
             android:layout_marginLeft="10dp"
-            android:tag="name_4"
+            android:tag="name4"
             />
     </RelativeLayout>
 
@@ -239,11 +239,11 @@
             android:id="@+id/training_LBL_name5"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Maor zagori\nYoga\n42\n"
+            android:text="Shai arviv\nHagolan 101\n054-48752102\n"
             android:textSize="20sp"
             android:textColor="@color/white"
             android:layout_marginLeft="10dp"
-            android:tag="name_5"
+            android:tag="name5"
             />
     </RelativeLayout>
 

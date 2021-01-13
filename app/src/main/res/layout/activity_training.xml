@@ -33,21 +33,21 @@
 
     <LinearLayout
 
-        android:id="@+id/training_LAY_liner1"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:background="#AB424242"
-        android:layout_below="@id/training_LBL_Title"
-        android:layout_marginTop="20dp"
-        >
-        <ImageView
-            android:id="@+id/training_IMG_hand"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
+    android:id="@+id/training_LAY_liner1"
+    android:layout_width="100dp"
+    android:layout_height="100dp"
+    android:background="#AB424242"
+    android:layout_below="@id/training_LBL_Title"
+    android:layout_marginTop="20dp"
+    >
+    <ImageView
+        android:id="@+id/training_IMG_hand"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
 
-            android:layout_gravity="left"
-            />
-    </LinearLayout>
+        android:layout_gravity="left"
+        />
+</LinearLayout>
 
 
 
@@ -71,25 +71,25 @@
             android:layout_marginLeft="10dp"
             android:textSize="20sp"
             android:textColor="@color/white"
-            android:tag="name_1"
+            android:tag="name"
             />
     </RelativeLayout>
 
-    <LinearLayout
-        android:id="@+id/training_LAY_liner2"
-        android:layout_below="@id/training_LAY_liner1"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:background="#AB424242"
-        android:layout_marginTop="15dp"
-        >
-        <ImageView
-            android:id="@+id/training_IMG_hand1"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_gravity="left"
-            />
-    </LinearLayout>
+<LinearLayout
+    android:id="@+id/training_LAY_liner2"
+    android:layout_below="@id/training_LAY_liner1"
+    android:layout_width="100dp"
+    android:layout_height="100dp"
+    android:background="#AB424242"
+    android:layout_marginTop="15dp"
+    >
+    <ImageView
+        android:id="@+id/training_IMG_hand1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="left"
+        />
+</LinearLayout>
 
 
 
@@ -110,27 +110,27 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
-            android:tag="name_2"
+            android:tag="name1"
             android:text="Dafna levi\nShape\n22\n"
             android:textColor="@color/white"
             android:textSize="20sp" />
     </RelativeLayout>
 
-    <LinearLayout
-        android:id="@+id/training_LAY_liner3"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:background="#AB424242"
-        android:layout_below="@id/training_LAY_liner2"
-        android:layout_marginTop="15dp"
-        >
-        <ImageView
-            android:id="@+id/training_IMG_hand2"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_gravity="left"
-            />
-    </LinearLayout>
+<LinearLayout
+    android:id="@+id/training_LAY_liner3"
+    android:layout_width="100dp"
+    android:layout_height="100dp"
+    android:background="#AB424242"
+    android:layout_below="@id/training_LAY_liner2"
+    android:layout_marginTop="15dp"
+    >
+    <ImageView
+        android:id="@+id/training_IMG_hand2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="left"
+        />
+</LinearLayout>
 
 
 
@@ -155,25 +155,25 @@
             android:layout_marginLeft="10dp"
             android:textSize="20sp"
             android:textColor="@color/white"
-            android:tag="name_3"
+            android:tag="name3"
             />
     </RelativeLayout>
 
-    <LinearLayout
-        android:id="@+id/training_LAY_liner4"
-        android:layout_below="@id/training_LAY_liner3"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:background="#AB424242"
-        android:layout_marginTop="15dp"
-        >
-        <ImageView
-            android:id="@+id/training_IMG_hand4"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_gravity="left"
-            />
-    </LinearLayout>
+<LinearLayout
+    android:id="@+id/training_LAY_liner4"
+    android:layout_below="@id/training_LAY_liner3"
+    android:layout_width="100dp"
+    android:layout_height="100dp"
+    android:background="#AB424242"
+    android:layout_marginTop="15dp"
+    >
+    <ImageView
+        android:id="@+id/training_IMG_hand4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="left"
+        />
+</LinearLayout>
 
 
 
@@ -199,25 +199,25 @@
             android:textSize="20sp"
             android:textColor="@color/white"
             android:layout_marginLeft="10dp"
-            android:tag="name_4"
+            android:tag="name4"
             />
     </RelativeLayout>
 
-    <LinearLayout
-        android:id="@+id/training_LAY_liner5"
-        android:layout_below="@id/training_LAY_liner4"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:background="#AB424242"
-        android:layout_marginTop="15dp"
-        >
-        <ImageView
-            android:id="@+id/training_IMG_hand5"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_gravity="left"
-            />
-    </LinearLayout>
+<LinearLayout
+    android:id="@+id/training_LAY_liner5"
+    android:layout_below="@id/training_LAY_liner4"
+    android:layout_width="100dp"
+    android:layout_height="100dp"
+    android:background="#AB424242"
+    android:layout_marginTop="15dp"
+    >
+    <ImageView
+        android:id="@+id/training_IMG_hand5"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="left"
+        />
+</LinearLayout>
 
 
 
@@ -243,7 +243,7 @@
             android:textSize="20sp"
             android:textColor="@color/white"
             android:layout_marginLeft="10dp"
-            android:tag="name_5"
+            android:tag="name5"
             />
     </RelativeLayout>
 
