@@ -30,7 +30,7 @@
         <activity android:name=".register.regCoach" ></activity>
         <activity android:name=".register.regDiet" ></activity>
         <activity android:name=".register.regSupply" ></activity>
-
+        <activity android:name=".PayActivity" ></activity>
         <activity android:name=".listdiet" ></activity>
         <activity android:name=".listsupply" ></activity>
         <activity android:name=".listcoach" ></activity>
