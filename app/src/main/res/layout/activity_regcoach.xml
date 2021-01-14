@@ -17,7 +17,15 @@
         android:paddingLeft="24dp"
         android:paddingRight="24dp">
 
-
+        <ImageView
+            android:id="@+id/Training_IMG_back"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/left"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:tag="back"
+            />
         <!--  Name Label -->
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
